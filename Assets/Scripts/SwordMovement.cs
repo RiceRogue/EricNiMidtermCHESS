@@ -12,9 +12,11 @@ public class SwordMovement : MonoBehaviour
     //This class is responsible for spawning the hands and guilding the player's sword movement. 
     void Start()
     {
-        //hands = Instantiate(hands, transform.position + transform.right, transform.rotation);
-        //sword = Instantiate(sword, hands.transform.position, sword.transform.rotation);
-        swingTime = 1.3f;
+        hands = Instantiate(hands, transform.position + transform.right, transform.rotation);
+        sword = Instantiate(sword, hands.transform.position, sword.transform.rotation);
+        swingTime = 2.0f;
+
+        sword.transform.parent = hands.transform;
     }
 
     // Update is called once per frame
@@ -23,28 +25,29 @@ public class SwordMovement : MonoBehaviour
         //sword.transform.position = hands.transform.position;
         //sword.transform.rotation = hands.transform.rotation;
 
+        
+
         //Sword orientation in relation to both the camera and the player. 
-        hands.transform.position = Camera.main.transform.position + 0.3f* Camera.main.transform.right + 0.9f*Camera.main.transform.forward;
-        sword.transform.rotation = Camera.main.transform.rotation * new Quaternion(-1f,0.3f,0.5f,0.5f);
+        hands.GetComponent<Rigidbody>().MovePosition(Camera.main.transform.position + 0.3f * Camera.main.transform.right + 0.9f * Camera.main.transform.forward );
+
+
+        //hands.transform.position = Camera.main.transform.position + 0.3f * Camera.main.transform.right + 0.9f * Camera.main.transform.forward;
+
+        sword.transform.rotation = Camera.main.transform.rotation * new Quaternion(-1f,0.3f,0.5f,0.9f);
+
+
 
 
         //Swings the sword the player has.
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            swingSword();
+            hands.GetComponent<Rigidbody>().MovePosition(Camera.main.transform.position - 0.3f * Camera.main.transform.right - 0.9f * Camera.main.transform.forward);
+
+
         }
 
     }
 
 
-    public void swingSword()
-    {
-        float timer = 0f;
-        timer += Time.deltaTime;
-
-        if (timer < swingTime)
-        {
-            sword.transform.position = Camera.main.transform.forward;
-        }
-    }
+    
 }
