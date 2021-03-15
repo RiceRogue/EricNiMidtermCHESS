@@ -13,8 +13,7 @@ public class BoardManager : MonoBehaviour
     void Start()
     {
         //player = GameObject.Find("White King(Clone)");
-        SpawnPoint = GameObject.Find("SpawnPoint");
-        
+                
 
         //https://assetstore.unity.com/packages/3d/chess-pieces-and-board-95641    
         //spawns the player onto the player on a spawnpoint, with both taken from the above free assets package. 

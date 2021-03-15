@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33648169640941660}
   - component: {fileID: 23887343647270520}
   - component: {fileID: 4634795226779571027}
+  - component: {fileID: 1374170136728514958}
   m_Layer: 0
   m_Name: Sword_classic
   m_TagString: Untagged
@@ -93,3 +94,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1399007, y: 2.4592555, z: 18.803566}
   m_Center: {x: 0.0015481561, y: -0.0028149409, z: 5.7341456}
+--- !u!114 &1374170136728514958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138316777578532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a44d69cb1eed75459a7061430ac570f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
