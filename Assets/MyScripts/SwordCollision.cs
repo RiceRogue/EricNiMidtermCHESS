@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SwordCollision : MonoBehaviour
 {
+    //This class takes care of collisions only. 
+    public bool swordMoving;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,22 +15,26 @@ public class SwordCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
 
     }
 
 
     void OnCollisionEnter(Collision collision)
     {
-        EnemyMovement enemy = collision.gameObject.GetComponent<EnemyMovement>();
-
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "EnemyRook")
         {
 
-            enemy.enemyHealth -= 5;
-
+            EnemyMovement enemyRook = collision.gameObject.GetComponent<EnemyMovement>();
+            if (swordMoving == true)
+            {
+                enemyRook.enemyHealth -= 5;
+            }
         }
-
-
     }
-
 }
+
+
+    
+

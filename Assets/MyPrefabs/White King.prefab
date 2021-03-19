@@ -114,7 +114,6 @@ MonoBehaviour:
   followSpeed: 0
   cam: {fileID: 0}
   rigidbody: {fileID: 0}
-  sword: {fileID: 0}
 --- !u!65 &2081610341876979029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -126,8 +125,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.051382888, y: 0.05138289, z: 0.018840682}
-  m_Center: {x: 0.0000000018626451, y: 1.4240572e-16, z: 0.0006263069}
+  m_Size: {x: 0.023677018, y: 0.030347984, z: 0.018840687}
+  m_Center: {x: 0.0021852367, y: 0.000059815746, z: 0.00062630675}
 --- !u!114 &3310969172769285172
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         followSpeed = 5f;
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = gameObject.GetComponent<Rigidbody>();
         //manager = gameObject.AddComponent<BoardManager>();
         cam = Camera.main;
         
