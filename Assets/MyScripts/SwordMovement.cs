@@ -38,7 +38,7 @@ public class SwordMovement : MonoBehaviour
         //Sword orientation in relation to both the camera and the player. 
 
         sword.GetComponent<Rigidbody>().MovePosition(Vector3.Lerp(sword.transform.position,Camera.main.transform.position + 0.3f *
-                Camera.main.transform.right + 1.7f * Camera.main.transform.forward, 80f*Time.deltaTime));
+                Camera.main.transform.right + 1.7f * Camera.main.transform.forward, 50f*Time.deltaTime));
         
 
         //hands.transform.position = Camera.main.transform.position + 0.3f * Camera.main.transform.right + 0.9f * Camera.main.transform.forward;

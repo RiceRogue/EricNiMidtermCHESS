@@ -31,6 +31,8 @@ public class SwordCollision : MonoBehaviour
             {
                 enemyRook.enemyHealth -= 5;
             }
+
+            Debug.Log(enemyRook.enemyHealth);
         }
     }
 }

@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     public int enemyHealth;
     void Start()
     {
-        enemyHealth = 15;
+        enemyHealth = 35;
     }
 
     // Update is called once per frame
