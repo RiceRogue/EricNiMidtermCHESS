@@ -26,10 +26,12 @@ public class SwordCollision : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
 
-            EnemyMovement enemyRook = collision.gameObject.GetComponent<EnemyMovement>();
+            EnemyHealth enemyRook = collision.gameObject.GetComponent<EnemyHealth>();
             if (swordMoving == true)
             {
+                GetComponent<AudioSource>().Play();
                 enemyRook.enemyHealth -= 5;
+
             }
 
         }

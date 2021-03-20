@@ -7,63 +7,38 @@ public class EnemyMovement : MonoBehaviour
 {
 
     //This class contains the functions for enemy health and pathfinding movements.
-    public int enemyHealth;
-    public bool destroyed;
+    
 
     public NavMeshAgent agent;
+    public bool isDestroyed;
 
     
     void Start()
     {
-        enemyHealth = 20;
-        destroyed = false;
+        isDestroyed = gameObject.transform.GetChild(0).GetComponent<EnemyHealth>().destroyed;
         agent = gameObject.GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updatePosition = false;
+        //agent.updateRotation = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        
-        if (enemyHealth <= 0)
-        {
-            
-
-           
-             destroyed = true;
-             Destroy(gameObject);
-            
-        }
-
         GameObject player = GameObject.Find("White King");
 
-        if (destroyed == false)
+        if (isDestroyed == false)
         {
-            agent.destination = player.transform.position;
+            agent.SetDestination( player.transform.position);
             
             //transform.rotation = Quaternion.Slerp(transform.rotation, new Quaternion(0, 90, 0, 0), Time.deltaTime * 1);
 
         }
-
+        agent.SetDestination(player.transform.position);
 
 
     }
 
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.layer == 10)
-        {
-
-            PlayerMovement player = collision.gameObject.GetComponent<PlayerMovement>();
-            
-               player.playerHealth -= 5;
-            
-
-        }
-    }
+    
 
 
 
