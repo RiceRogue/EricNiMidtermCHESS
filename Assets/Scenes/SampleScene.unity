@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Surface
       objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
@@ -270,6 +270,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8544453239985484021, guid: 0d1248a01eeedc04c928f0254148fb58,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
       propertyPath: m_Name
@@ -279,6 +284,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
+        type: 3}
+      propertyPath: m_TagString
+      value: Surface
       objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
@@ -681,7 +691,7 @@ PrefabInstance:
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Surface
       objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
@@ -785,7 +795,7 @@ PrefabInstance:
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Surface
       objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
@@ -1008,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Surface
       objectReference: {fileID: 0}
     - target: {fileID: 8558244829036790683, guid: 0d1248a01eeedc04c928f0254148fb58,
         type: 3}
@@ -1169,7 +1179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4041927016075158, guid: 973983e22257f4007b9b0bb5ccae1184, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.38
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4041927016075158, guid: 973983e22257f4007b9b0bb5ccae1184, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1212,6 +1222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 531409814284704257, guid: 973983e22257f4007b9b0bb5ccae1184,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2081610341876979029, guid: 973983e22257f4007b9b0bb5ccae1184,
         type: 3}
