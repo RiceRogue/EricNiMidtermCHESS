@@ -23,7 +23,7 @@ public class SwordCollision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "EnemyRook")
+        if (collision.gameObject.tag == "Enemy")
         {
 
             EnemyMovement enemyRook = collision.gameObject.GetComponent<EnemyMovement>();

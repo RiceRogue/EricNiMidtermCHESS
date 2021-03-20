@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Wall
   - Sword
-  - EnemyRook
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -21,7 +21,7 @@ TagManager:
   - Player
   - Hands and Sword
   - Enemies
-  - 
+  - Surrounding
   - 
   - 
   - 

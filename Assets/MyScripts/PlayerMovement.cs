@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,18 +13,18 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody rigidbody;
 
- 
+    public int playerHealth;
     
     
     //public BoardManager manager;
     // Start is called before the first frame update
     void Start()
     {
-        followSpeed = 5f;
+        followSpeed = 5.5f;
         rigidbody = gameObject.GetComponent<Rigidbody>();
         //manager = gameObject.AddComponent<BoardManager>();
         cam = Camera.main;
-        
+        playerHealth = 50;
         
     }
 
@@ -61,7 +63,12 @@ public class PlayerMovement : MonoBehaviour
 
         //]
 
+        //Check if player has died.
 
+        if(playerHealth <= 0)
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
 
 
     }
